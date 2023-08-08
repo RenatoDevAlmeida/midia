@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1 {
+        color: #303030;
+    }
+    h2 {
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 600;
+    }
+    body{
+        padding: 50px;
+        display: grid;
+        justify-content: center;
+        background-color: #EEE;
+        color: #818181
+    }
+    section {
+        width: 50vw;
+    }
+    fieldset {
+        padding: 20px 20px;        
+        border: 1px solid #00E88F;
+        background-color: #ffffff26;
+    }
+    textarea {
+        width: 100%;
+    }
+    input, select, textarea, radio{
+        padding: 5px ;
+        outline: 0;
+        
+    }
+    input[type = "submit"] {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: #00E88F ;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 1.5rem;
+    }
+    ::-webkit-scrollbar {
+    width: 15px;
+    background: #151515;
+}
+::-webkit-scrollbar-thumb {
+    background: #00E88F;   
+    border-radius: 5px;
+}
+</style>
+<body>
+    <section>
+        <h2>Orçamento:</h2>
+        <form action="#"  method="post">
+            <fieldset>
+
+                <legend>Dados da viagem:</legend>
+                <label for="Fname">Nome:</label><br>
+                <input type="text" name="nome"> <br><br>
+
+                <label for="Femail">Email:</label><br>
+                <input type="email" required name="email"> <br> <br>
+
+                <label for="">Data de ida:</label><br>
+                <input type="date" name="datIda"><br><br>  
+
+                <label for="">Data de volta:</label><br>
+                <input type="date" name="datVolta"><br><br>
+                
+                <label for="">Quantidade de pessoas:</label><br>
+                <input type="number" name="qtdPessoa"> <br> <br>
+            </fieldset>  <br> 
+            <fieldset>               
+            
+                <legend for="">Quais serviços deseja contratar:</legend>
+                <label for="">
+                    <input type="checkbox" name="passagens" id="" value="Passagens"> Compra de passagens<br><br>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="hospedagem" id="" value="Hospedagem"> Reserva de hospedagem <br><br>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="veiculos" id="" value="veiculos"> Reserva de veículos <br><br>
+                </label>
+            </fieldset><br>
+            <fieldset>
+                <legend>Escolha a forma de pagamento:</legend>
+                <label for="">
+                    <br><input type="radio" name="formaPagamento" value="cartão de Crédito"> Cartão de Crédito <br><br>
+                    <br><input type="radio" name="formaPagamento" value="Boleto"> Boleto <br><br>
+                    <br><input type="radio" name="formaPagamento" value="Pix"> Pix <br><br>
+                </label>
+            </fieldset> <br>
+            <fieldset>
+                <legend>Escolhga o prazo de pagamento:</legend>
+                <select name="prazoPagamento" id="">
+                    <option value="aVista"> À Vista</option>
+                    <option value="5X"> 5x sem juros</option>
+                    <option value="10xComJuros"> 10x com juros</option>
+                </select><br>
+            </fieldset><br><br>
+            <label for="">Comentário:</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
